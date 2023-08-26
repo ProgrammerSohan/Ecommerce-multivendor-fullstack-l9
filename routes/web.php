@@ -45,13 +45,13 @@ Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->group(function
 
    // view admins / subadmins/vendors
    Route::get('admins/{type?}','AdminController@admins');
+   //view vendor details
+   Route::get('view-vendor-details/{id}', 'AdminController@viewVendorDetails');
 
     //admin logout
     Route::get('logout','AdminController@logout');
 
     });
-
-
 
 });
 

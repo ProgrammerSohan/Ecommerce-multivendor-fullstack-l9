@@ -73,8 +73,10 @@
                       <td>
                                     @if($admin['status']==1)
                     <i style="font-size:25px;" class="mdi mdi-bookmark-check"></i>
+
                     @else
                     <i style="font-size:25px;" class="mdi mdi-bookmark-outline"></i>
+
 
                     @endif
 
@@ -82,7 +84,7 @@
 
                       <td>
                         @if($admin['type']=="vendor")
-                        <a href="{{ url('admin/view-vendor-details/'.$admin['id'])}}"><i style="font-size:25px;" class="mdi mdi-file-document"></i></a>
+            <a href="{{ url('admin/view-vendor-details/'.$admin['id'])}}"><i style="font-size:25px;" class="mdi mdi-file-document"></i></a>
                            @endif
 
                       </td>
